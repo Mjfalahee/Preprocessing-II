@@ -263,3 +263,14 @@ header h1 {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .btn {
+  width: 200px;
+  height: 45px;
+  color: white;
+  background-color: #028385;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}

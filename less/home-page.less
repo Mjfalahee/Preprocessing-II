@@ -17,9 +17,7 @@ header {
 
 .home {
 
-
   .welcomeinfo {
-
     margin-top: 20px;
     padding-bottom: 1.15rem;
     border-bottom: 2px dashed grey;
@@ -31,8 +29,6 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -72,6 +68,13 @@ header {
     }
   }
 
+//   .custombtn(@width, @height, @colortext, @colorback) {
+//     width: @width;
+//     border-radius: 0; 
+//     color: @colortext;
+//     background-color: @colorback;
+// }
+
   .content-pick {
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
@@ -81,6 +84,12 @@ header {
     .destination {
       width: 30%;
       margin-bottom: 30px;
+    }
+
+    .btn {
+      .custombtn(200px, 45px, white, @teal);
+      .flexcenter;
+      border-radius: 15px;
     }
   }
 }// home
