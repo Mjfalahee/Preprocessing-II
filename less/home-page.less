@@ -13,14 +13,35 @@ header {
       width: 55%;
       text-align: left;
   }
+
+  @media @mobile {
+    flex-direction: column;
+    padding-bottom: 1rem;
+    padding-right: 10%;
+    padding-left: 10%;
+    h1 {
+      margin-left:0;
+      margin-bottom: 10px;
+      text-align: center;
+      font-size: 3rem;
+    }
+  
+  }
 }
 
 .home {
 
+  @media @mobile {
+
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+
   .welcomeinfo {
     margin-top: 20px;
     padding-bottom: 1.15rem;
-    border-bottom: 2px dashed grey;
+    border-bottom: 2px dashed grey; 
   }
 
   .content-section {

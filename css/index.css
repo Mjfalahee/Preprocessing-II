@@ -185,6 +185,17 @@ nav a {
   color: black;
   margin-left: 30px;
 }
+@media (max-width: 500px) {
+  nav {
+    margin-right: 0;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  nav a {
+    width: 100%;
+    margin-left: 20px;
+  }
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -211,6 +222,26 @@ header h1 {
   margin-left: 10%;
   width: 55%;
   text-align: left;
+}
+@media (max-width: 500px) {
+  header {
+    flex-direction: column;
+    padding-bottom: 1rem;
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+  header h1 {
+    margin-left: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .home {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
 .home .welcomeinfo {
   margin-top: 20px;
