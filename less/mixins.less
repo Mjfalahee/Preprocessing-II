@@ -1,1 +1,23 @@
 // Mixins in here
+
+
+.flexcenter() {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custombtn(@width, @height, @colortext, @colorback) {
+    width: @width;
+    height: @height; 
+    color: @colortext;
+    background-color: @colorback;
+    font-size: 1.8rem;
+}
+
+//test
+
+.test {
+    border: 1px solid red;
+}

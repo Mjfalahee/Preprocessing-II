@@ -1,4 +1,48 @@
+header {
+
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  .flexcenter;
+
+  margin-top: 2rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 2px dashed grey;
+  h1 {
+      margin-left: 10%;
+      width: 55%;
+      text-align: left;
+  }
+
+  @media @mobile {
+    flex-direction: column;
+    padding-bottom: 1rem;
+    padding-right: 10%;
+    padding-left: 10%;
+    h1 {
+      margin-left:0;
+      margin-bottom: 10px;
+      text-align: center;
+      font-size: 3rem;
+    }
+  
+  }
+}
+
 .home {
+
+  @media @mobile {
+
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  
+
+  .welcomeinfo {
+    margin-top: 20px;
+    padding-bottom: 1.15rem;
+    border-bottom: 2px dashed grey; 
+  }
 
   .content-section {
     margin: 30px 0;
@@ -6,8 +50,6 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -21,6 +63,20 @@
         border-radius: 10px;
       }
     }
+
+    @media @mobile {
+      flex-direction: column;
+
+      .text-content {
+        width: 100%;
+        padding-right: 0;
+      }
+
+      .img-content {
+        width: 100%;
+        padding-left: 0;
+      }
+    }
   }
 
   .inverse-content {
@@ -28,13 +84,29 @@
     border-bottom: 2px dashed @navigation-border;
 
     .text-content {
-      padding-left: 1%;
+      padding-left: 0;
       padding-right: 0;
     }
 
     .img-content {
-      padding-right: 1%;
+      padding-right: 0;
       padding-left: 0;
+    }
+
+    @media @mobile {
+      
+      flex-direction: column;
+
+      .text-content {
+        order: -1;
+        width: 100%;
+        padding-right: 1%;
+      }
+
+      .img-content {
+        width: 100%;
+        padding-left: 0;
+      }
     }
   }
 
@@ -45,7 +117,18 @@
     img {
       border-radius: 10px;
     }
+
+    @media @mobile {
+      width: 100%;
+    }
   }
+
+//   .custombtn(@width, @height, @colortext, @colorback) {
+//     width: @width;
+//     border-radius: 0; 
+//     color: @colortext;
+//     background-color: @colorback;
+// }
 
   .content-pick {
     padding-top: 30px;
@@ -56,6 +139,29 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+    }
+
+    .btn {
+      .custombtn(200px, 45px, white, @teal);
+      .flexcenter;
+      border-radius: 15px;
+    }
+
+    @media @mobile {
+
+      flex-direction: column;
+      align-items: center;
+
+      .destination {
+        width: 80%;
+      }
+
+      .btn {
+        .custombtn(100%, 45px, white, @teal);
+        .flexcenter;
+      border-radius: 15px;
+      }
+      
     }
   }
 }// home
